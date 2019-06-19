@@ -1,0 +1,137 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset255 Times New Roman;}{\f3\fnil Times New Roman;}{\f4\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\ul\b\f0\fs40\lang9 Java Code Conventions.\par
+
+\pard\sa200\sl276\slmult1\ulnone\par
+\ul\b0\fs28 Java source file.\b\fs40\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\i\fs28 maintaing code conventions always help us to better understandability and  readability  of the source code.\i0\f1\fs22\par
+{\pntext\f4\'B7\tab}\i\fs28 filename of java source  code will always be \b .java \b0 extensions\f0 .\i0\f1\fs22\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i\f0\fs28  Java source files always have  Package and Import statements at its beginning lines.The first non-comment line of  Java source files is a package statement. After that,import statements can follow.\i0\f1\fs22\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i\f0\fs28 after the package has been specified programmer can  also brief the description of the purpose of the program by commenting it.\i0\f1\fs22\par
+
+\pard\sa200\sl276\slmult1\qc\par
+
+\pard\sa200\sl276\slmult1\ul\f0\fs28 Class declarations.\f1\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\i\f0 methods declared on the class should be grouped by functionality rather than by scope or accessibility.\i0\f1\fs22\par
+
+\pard\sa200\sl276\slmult1\i\f0\fs28\par
+\ul\i0\f2\lang1033 Wrapping Lines.\ulnone\f1\fs22\lang9\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i\f0\fs28 When an expression will not fit on a single line, break it according to principles like Break before an operator,Break after a comma,Align the new line etc..\i0\f1\fs22\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i\f0\fs28  For Indenting method declarations, provide 8 spaces to properly indent a method.\ul\i0\par
+
+\pard\sa200\sl276\slmult1\par
+Comments.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\i comments are of implementation and documenttion comments.\ul\i0\par
+{\pntext\f4\'B7\tab}\i Implementation Comment Formats \ulnone inludes the below.\ul\i0\par
+{\pntext\f4\'B7\tab}\ulnone\i Comments mainly used to give overview of code.\ul\i0\par
+{\pntext\f4\'B7\tab}\i Single-Line Comments \ulnone\b : \b0 It includes Short comments can appear on a single line indented to the level of the code using \b\fs32 /* \b0\fs28 and  \b\fs32 */\ul\b0\i0\fs28\par
+{\pntext\f4\'B7\tab}\ulnone\i  If a comment can\rquote t be written in a single line, it should follow the block comment format .\ul\i0\par
+{\pntext\f4\'B7\tab}\ulnone\i  \ul Block comments \ulnone can start with  \b\fs44 /*\fs36  \b0\fs28 and  ends with \b\fs44 */ \b0\fs28 This can be done by selecting a part of the code to be commented and using shortcut as \b\fs32 ctrl,shift,/ \b0\fs28 and same way decmmenting can be done by using the shortcut as \b\fs32 ctrl,shift,\\\ul\i0\par
+{\pntext\f4\'B7\tab}\b0\i\fs28 End-Of-Line Comments \ulnone begins with  \b\fs36 // \b0\fs28 comment delimiter.\ul\b\i0\fs32\par
+{\pntext\f4\'B7\tab}\b0\i\fs28 Documentation Comments\b\fs36 :\ulnone\b0\fs28 Doc comments describe Java classes, interfaces, constructors, methods, and fields. Each doc comment is set inside the comment delimiters  as \b\fs36 /**...*/\ul\i0\fs28\par
+{\pntext\f4\'B7\tab}\ulnone\b0\i Doc comments should not be positioned inside a method or constructor definition block.\ul\b\i0\par
+{\pntext\f4\'B7\tab}\ulnone\b0\i  use an implementation block comment  to give information about a class, interface, variable, or method .\ul\b\i0\par
+
+\pard\sa200\sl276\slmult1\ulnone\b0\par
+\ul Declarations.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\i variable declaration should be on per line.\i0\par
+
+\pard\sa200\sl276\slmult1\f1\fs22              \ul\b\i ex\ulnone\b0 : int a=10;\i0\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i\f0\fs28 Put declarations only at the beginning of methods so that  it cannot confuse the unwary programmer to initialize value wherever he wanted to.\i0\f1\fs22\par
+{\pntext\f4\'B7\tab}\i\f0\fs28 Do not declare the same variable name in an inner method.\i0\f1\fs22\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\f0\fs28 Initialization.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\i Initialize local variables where they\rquote re declared  if the initial value depends on some computation.\i0\f1\fs22\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\f0\fs28 Class and Interface Declarations.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\i No space between a method name and the parenthesis \ldblquote (\ldblquote  starting its parameter list.\ul\i0\par
+{\pntext\f4\'B7\tab}\ulnone\i\f3 Methods are separated by a blank line\f0\lang1033 .\ul\i0\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+\lang1033 Statements.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i\lang9 Simple Statements\b\fs36 : \ulnone\b0\fs28 Each line should contain at most one statement.\ul\i0\par
+{\pntext\f4\'B7\tab}\i Compound Statements\ulnone\b\fs36 :\b0\fs28 Compound statements are statements that contain lists of statements enclosed in braces.\ul\par
+{\pntext\f4\'B7\tab} return Statements\ulnone\b\fs36 : \b0\fs28 A return statement with a value should not use parentheses unless they make the return value more obvious in some way.\ul\par
+
+\pard\sa200\sl276\slmult1\ulnone         \b ex: \b0 return;\par
+       \b ex: \b0 return myDisk.size();\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul if, if-else, if-else-if-else Statements\ulnone\b\fs36 : \ul\fs28\par
+
+\pard\sa200\sl276\slmult1\qc\ulnone\b0        The if-else class of statements should have the following form:\par
+     if (condition) \{\par
+   statements;\par
+\}\par
+if (condition) \{\par
+statements;\par
+\} else \{\par
+statements;\par
+\}\par
+if (condition) \{\par
+statements;\par
+\} else if (condition) \{\par
+statements;\par
+\}\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\ul for Statements\ulnone\b\fs36 :\b0\fs28 A for statement should have the following form:\par
+
+\pard\sa200\sl276\slmult1\qc        for (initialization; condition; update) \{\par
+          statements;\par
+      \}\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\ul while Statements\ulnone\b\fs36 :\b0\fs28 A while statement should have the following form:\par
+
+\pard\sa200\sl276\slmult1\qc        while (condition) \{\par
+        statements;\par
+       \}\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  \ul do-while Statements\ulnone\b\fs36 :\b0\fs28 A do-while statement should have the following form:\par
+
+\pard\sa200\sl276\slmult1\qc       do \{\par
+     statements;\par
+   \} while (condition);\par
+\ul switch Statements\ulnone\b\fs36 :\b0\fs28 A switch statement should have the following form: switch (condition) \{\par
+case ABC:\par
+statements;\par
+/* falls through */\par
+case DEF:\par
+statements;\par
+break;\par
+case XYZ:\par
+statements;\par
+ break;\par
+default:\par
+statements;\par
+ break;\par
+\}\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ul try-catch Statements\ulnone\b\fs36 :\b0\fs28 A try-catch statement should have the following format:\par
+
+\pard\sa200\sl276\slmult1\qc try \{\par
+statements;\par
+\} catch (ExceptionClass e) \{\par
+statements;\par
+\}\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\qc\par
+\ul\par
+
+\pard\sa200\sl276\slmult1\qj\par
+}
+ 
