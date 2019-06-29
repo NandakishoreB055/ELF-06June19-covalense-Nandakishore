@@ -108,6 +108,7 @@ mysql> select max(salary),min(salary),sum(salary) from empp;
 
 8.Display the list of the number of s/w developer in dept 20 
 ************************************************************
+mysql> select count(job) from empp where jobtype='software developer' and deptno=10;
 +----------------+
 | count(jobtype) |
 +----------------+
@@ -119,6 +120,7 @@ mysql> select max(salary),min(salary),sum(salary) from empp;
 
 9.Display the list of highest and lowest salary earned by software developer.
 *****************************************************************************
+mysql> select max(salary) highest ,min(salary) lowest_salary from empp where jobtype='software developer';
 +---------+---------------+
 | highest | lowest_salary |
 +---------+---------------+
