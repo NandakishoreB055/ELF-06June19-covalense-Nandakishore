@@ -1,0 +1,12 @@
+Jun 17, 2019 12:49:47 PM day6.amazonloger main
+SEVERE: SEVERE msg
+Jun 17, 2019 12:49:47 PM day6.amazonloger main
+WARNING: WARNING msg
+Jun 17, 2019 12:49:47 PM day6.amazonloger main
+INFO: INFO msg
+Jun 17, 2019 12:49:47 PM day6.amazonloger main
+CONFIG: CONFIG msg
+Jun 17, 2019 12:49:47 PM day6.register connectdb
+INFO: dbconnected
+Jun 17, 2019 12:49:47 PM day6.register store
+INFO: stored
