@@ -6,6 +6,6 @@ import lombok.Data;
 public class DepartmentInfoBean {
 
 	private int deptId;
-	private int deptName;
+	private String deptName;
 
 }
