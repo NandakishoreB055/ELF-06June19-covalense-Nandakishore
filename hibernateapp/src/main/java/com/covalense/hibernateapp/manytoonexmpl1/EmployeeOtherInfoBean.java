@@ -1,19 +1,28 @@
-package com.covalense.hibernateapp.dto;
+package com.covalense.hibernateapp.manytoonexmpl1;
+
+import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.covalense.hibernateapp.manytomany.EmployeeInfoBean;
 
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name = "employee_otherinfo")
-public class EmployeeOtherInfoBean {
+public class EmployeeOtherInfoBean implements Serializable {
 	@Id
-	@Column(name = "id")
-	private int id;
+	@OneToOne
+	@JoinColumn(name = "id")
+	// @PrimaryKeyJoinColumn(name = "id")
+	private EmployeeInfoBean infoBean;
+
 	@Column(name = "pan")
 	private int pan;
 	@Column(name = "ismarried")

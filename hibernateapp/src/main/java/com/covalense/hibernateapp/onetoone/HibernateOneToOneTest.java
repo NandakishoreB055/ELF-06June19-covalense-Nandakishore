@@ -20,21 +20,22 @@ public class HibernateOneToOneTest {
 		EmployeeInfoBean data = PrepareDataUtil.prepareData(id);
 		save(data);
 	}
-		// Save
-		private static void save(EmployeeInfoBean data) {
-			Transaction txn = null;
-			try (Session session = ModifiedHibernateUtil.getSession()) {
-				txn=session.beginTransaction();
-				session.save(data);
-				txn.commit();
-			} catch (Exception ex) {
-				//log.severe(Arrays.toString(ex.getStackTrace()));
-				ex.printStackTrace();
-				if (txn != null) {
-					txn.rollback();
-				}
+
+	// Save
+	private static void save(EmployeeInfoBean data) {
+		Transaction txn = null;
+		try (Session session = ModifiedHibernateUtil.getSession()) {
+			txn = session.beginTransaction();
+			session.save(data);
+			txn.commit();
+		} catch (Exception ex) {
+			// log.severe(Arrays.toString(ex.getStackTrace()));
+			ex.printStackTrace();
+			if (txn != null) {
+				txn.rollback();
+			}
 		}
-		
+
 	}
 
 }

@@ -3,13 +3,12 @@ package com.covalense.hibernateapp.onetoone;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.covalense.hibernateapp.manytoonexmpl1.EmployeeOtherInfoBean;
 
 import lombok.Data;
 
@@ -18,10 +17,9 @@ import lombok.Data;
 @Table(name = "employee_info")
 public class EmployeeInfoBean implements Serializable {
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@PrimaryKeyJoinColumn
-	private EmployeeOtherInfoBean otherInfo;
+	//@OneToOne(cascade = CascadeType.ALL)
 	
+	//private EmployeeOtherInfoBean otherInfo;
 	
 	@Id
 	@Column(name = "id")

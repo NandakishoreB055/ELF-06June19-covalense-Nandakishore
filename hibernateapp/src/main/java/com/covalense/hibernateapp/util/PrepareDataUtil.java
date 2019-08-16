@@ -58,7 +58,7 @@ public class PrepareDataUtil {
 		otherInfo.setAadhar(7583758);
 		empInf.setId(id);
 
-		empInf.setOtherInfo(otherInfo);
+		//empInf.setOtherInfo(otherInfo);
 		return empInf;
 
 	}
