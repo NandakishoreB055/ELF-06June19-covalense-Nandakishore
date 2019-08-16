@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- manual wiring steps -->
+	<!-- <bean id="emp " class="com.covalense.springcore.beans.EmppBean" -->
+	<!-- scope="prototype"> -->
+	<!-- <property name="name" value="kishore"></property> -->
+	<!-- <property name="id" value="1"></property> -->
+	<!-- <property name="departmentBean" ref="departmentBean"></property> -->
+	<!-- </bean> -->
+
+
+	<!-- auto-wiring byType steps -->
+	<!-- <bean id="emp" class="com.covalense.springcore.beans.EmppBean" -->
+	<!-- scope="prototype" autowire="byType"> -->
+	<!-- <property name="name" value="nanda"></property> -->
+	<!-- <property name="id" value="10"></property> -->
+	<!-- </bean> -->
+
+	<!-- <bean id="hr" -->
+	<!-- class="com.covalense.springcore.beans.DepartmentBean" > -->
+	<!-- <property name="deptId" value="9999"></property> -->
+	<!-- <property name="deptName" value="HR"></property> -->
+	<!-- </bean> -->
+
+	<!-- <bean id="dev" -->
+	<!-- class="com.covalense.springcore.beans.DepartmentBean" primary="true"> -->
+	<!-- <property name="deptId" value="1111"></property> -->
+	<!-- <property name="deptName" value="DEV"></property> -->
+	<!-- </bean> -->
+
+	<!-- <bean id="testing" -->
+	<!-- class="com.covalense.springcore.beans.DepartmentBean" autowire-candidate="false"> -->
+	<!-- <property name="deptId" value="5555"></property> -->
+	<!-- <property name="deptName" value="TESTING"></property> -->
+	<!-- </bean> -->
+
+
+
+	<!-- auto-wiring constructor steps -->
+	<bean id="emp" class="com.covalense.springcore.beans.EmppBean"
+		scope="prototype" autowire="constructor">
+		<constructor-arg name="name" value="nanda"></constructor-arg>
+		<constructor-arg name="id" value="10"></constructor-arg>
+	</bean>
+
+	<!-- <bean id="dev" -->
+	<bean id="dev"
+		class="com.covalense.springcore.beans.DepartmentBean">
+		<property name="deptId" value="7777"></property>
+		<property name="deptName" value="DEV"></property>
+	</bean>
+
+
+
+</beans>
